@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg-gradient-start:#003A85;
+  --bg-gradient-end:#0078FF;
+}
+
+html,body{
+  scroll-behavior:smooth;
+  background: linear-gradient(180deg,var(--bg-gradient-start),var(--bg-gradient-end)) fixed;
+  color: white;
+}
+
+.container-pro {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.section {
+  @apply container-pro py-20;
+}
+
+.card {
+  @apply bg-white text-slate-800 rounded-2xl shadow-card p-8;
+}
+
+a.btn-primary {
+  @apply inline-flex items-center gap-2 bg-allpay.sky text-white px-5 py-3 rounded-full font-medium hover:opacity-90 transition;
+}
